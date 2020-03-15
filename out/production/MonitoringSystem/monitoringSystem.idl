@@ -1,0 +1,37 @@
+module MonitoringSystem
+{
+    struct NoxReading {
+        string datetime;
+        string station_name;
+        long reading_value;
+    };
+
+    interface MonitoringStation{
+        readonly attribute string station_name;
+        readonly attribute string location;
+        readonly attribute boolean is_active;
+        readonly attribute string ior;
+        NoxReading get_reading();
+        boolean activate(in string station_name, in string location, in string ior);
+        void deactivate();
+        void reset();
+    };
+
+    interface MonitoringCentre{
+        void raise_alarm(in NoxReading alarm_reading);
+        void register_agency(in string who, in string contact_details, in string area_of_interest);
+        void register_local_server(in string server_name);
+    };
+
+    typedef sequence<NoxReading> Log_of_alarm_readings;
+    typedef sequence<NoxReading> Set_of_readings;
+
+    interface RegionalCentre{
+        readonly attribute string name;
+        readonly attribute string location_name;
+        readonly attribute Log_of_alarm_readings log;
+        void raise_alarm (in NoxReading alarmReading);
+        Set_of_readings take_readings();
+        void add_monitoring_station(in string station_name, in string station_location, in string station_ior);
+    };
+};
