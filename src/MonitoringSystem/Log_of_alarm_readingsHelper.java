@@ -4,7 +4,7 @@ package MonitoringSystem;
  * Generated from IDL alias "Log_of_alarm_readings".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 15-Mar-2020 17:24:50
+ * @version generated at 18-Mar-2020 11:09:29
  */
 
 public abstract class Log_of_alarm_readingsHelper
@@ -48,19 +48,19 @@ public abstract class Log_of_alarm_readingsHelper
 	public static MonitoringSystem.NoxReading[] read (final org.omg.CORBA.portable.InputStream _in)
 	{
 		MonitoringSystem.NoxReading[] _result;
-		int _l_result0 = _in.read_long();
+		int _l_result1 = _in.read_long();
 		try
 		{
 			 int x = _in.available();
-			 if ( x > 0 && _l_result0 > x )
+			 if ( x > 0 && _l_result1 > x )
 				{
-					throw new org.omg.CORBA.MARSHAL("Sequence length too large. Only " + x + " available and trying to assign " + _l_result0);
+					throw new org.omg.CORBA.MARSHAL("Sequence length too large. Only " + x + " available and trying to assign " + _l_result1);
 				}
 		}
 		catch (java.io.IOException e)
 		{
 		}
-		_result = new MonitoringSystem.NoxReading[_l_result0];
+		_result = new MonitoringSystem.NoxReading[_l_result1];
 		for (int i=0;i<_result.length;i++)
 		{
 			_result[i]=MonitoringSystem.NoxReadingHelper.read(_in);

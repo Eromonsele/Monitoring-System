@@ -5,7 +5,7 @@ package MonitoringSystem;
  * Generated from IDL interface "MonitoringCentre".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 15-Mar-2020 17:24:50
+ * @version generated at 18-Mar-2020 11:09:29
  */
 
 public class _MonitoringCentreStub
@@ -115,8 +115,8 @@ public class _MonitoringCentreStub
 				try
 				{
 					_os = _request( "register_local_server", true);
-					java.lang.String tmpResult8 = server_name;
-_os.write_string( tmpResult8 );
+					java.lang.String tmpResult5 = server_name;
+_os.write_string( tmpResult5 );
 					_is = _invoke(_os);
 					return;
 				}
@@ -199,12 +199,12 @@ _os.write_string( tmpResult8 );
 				try
 				{
 					_os = _request( "register_agency", true);
-					java.lang.String tmpResult9 = who;
-_os.write_string( tmpResult9 );
-					java.lang.String tmpResult10 = contact_details;
-_os.write_string( tmpResult10 );
-					java.lang.String tmpResult11 = area_of_interest;
-_os.write_string( tmpResult11 );
+					java.lang.String tmpResult6 = who;
+_os.write_string( tmpResult6 );
+					java.lang.String tmpResult7 = contact_details;
+_os.write_string( tmpResult7 );
+					java.lang.String tmpResult8 = area_of_interest;
+_os.write_string( tmpResult8 );
 					_is = _invoke(_os);
 					return;
 				}

@@ -5,7 +5,7 @@ package MonitoringSystem;
  * Generated from IDL interface "RegionalCentre".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 15-Mar-2020 17:24:50
+ * @version generated at 18-Mar-2020 11:09:29
  */
 
 public class _RegionalCentreStub
@@ -283,12 +283,12 @@ public class _RegionalCentreStub
 				try
 				{
 					_os = _request( "add_monitoring_station", true);
-					java.lang.String tmpResult12 = station_name;
-_os.write_string( tmpResult12 );
-					java.lang.String tmpResult13 = station_location;
-_os.write_string( tmpResult13 );
-					java.lang.String tmpResult14 = station_ior;
-_os.write_string( tmpResult14 );
+					java.lang.String tmpResult9 = station_name;
+_os.write_string( tmpResult9 );
+					java.lang.String tmpResult10 = station_location;
+_os.write_string( tmpResult10 );
+					java.lang.String tmpResult11 = station_ior;
+_os.write_string( tmpResult11 );
 					_is = _invoke(_os);
 					return;
 				}

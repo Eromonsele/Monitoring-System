@@ -6,7 +6,7 @@ import org.omg.PortableServer.POA;
  * Generated from IDL interface "MonitoringStation".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 15-Mar-2020 17:24:50
+ * @version generated at 18-Mar-2020 11:09:29
  */
 
 public class MonitoringStationPOATie
@@ -52,9 +52,14 @@ public class MonitoringStationPOATie
 		}
 		return super._default_POA();
 	}
-	public java.lang.String ior()
+	public boolean activate()
 	{
-		return _delegate.ior();
+		return _delegate.activate();
+	}
+
+	public void deactivate()
+	{
+_delegate.deactivate();
 	}
 
 	public java.lang.String station_name()
@@ -62,9 +67,14 @@ public class MonitoringStationPOATie
 		return _delegate.station_name();
 	}
 
-	public void deactivate()
+	public void send_alerts(MonitoringSystem.NoxReading reading)
 	{
-_delegate.deactivate();
+_delegate.send_alerts(reading);
+	}
+
+	public java.lang.String location()
+	{
+		return _delegate.location();
 	}
 
 	public MonitoringSystem.NoxReading get_reading()
@@ -77,19 +87,14 @@ _delegate.deactivate();
 _delegate.reset();
 	}
 
-	public java.lang.String location()
-	{
-		return _delegate.location();
-	}
-
-	public boolean activate(java.lang.String station_name, java.lang.String location, java.lang.String ior)
-	{
-		return _delegate.activate(station_name,location,ior);
-	}
-
 	public boolean is_active()
 	{
 		return _delegate.is_active();
+	}
+
+	public java.lang.String ior()
+	{
+		return _delegate.ior();
 	}
 
 }

@@ -4,7 +4,7 @@ package MonitoringSystem;
  * Generated from IDL alias "Log_of_alarm_readings".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 15-Mar-2020 17:24:50
+ * @version generated at 18-Mar-2020 11:09:29
  */
 
 public final class Log_of_alarm_readingsHolder

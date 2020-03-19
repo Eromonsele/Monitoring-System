@@ -5,7 +5,7 @@ package MonitoringSystem;
  * Generated from IDL interface "RegionalCentre".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 15-Mar-2020 17:24:50
+ * @version generated at 18-Mar-2020 11:09:29
  */
 
 public abstract class RegionalCentrePOA
@@ -49,8 +49,8 @@ public abstract class RegionalCentrePOA
 			case 0: // _get_name
 			{
 			_out = handler.createReply();
-			java.lang.String tmpResult15 = name();
-_out.write_string( tmpResult15 );
+			java.lang.String tmpResult12 = name();
+_out.write_string( tmpResult12 );
 				break;
 			}
 			case 1: // raise_alarm
@@ -63,8 +63,8 @@ _out.write_string( tmpResult15 );
 			case 2: // _get_location_name
 			{
 			_out = handler.createReply();
-			java.lang.String tmpResult16 = location_name();
-_out.write_string( tmpResult16 );
+			java.lang.String tmpResult13 = location_name();
+_out.write_string( tmpResult13 );
 				break;
 			}
 			case 3: // add_monitoring_station

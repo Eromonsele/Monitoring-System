@@ -5,7 +5,7 @@ package MonitoringSystem;
  * Generated from IDL interface "MonitoringStation".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 15-Mar-2020 17:24:50
+ * @version generated at 18-Mar-2020 11:09:29
  */
 
 public class _MonitoringStationStub
@@ -21,7 +21,7 @@ public class _MonitoringStationStub
 	}
 
 	public final static java.lang.Class _opsClass = MonitoringSystem.MonitoringStationOperations.class;
-	public java.lang.String ior()
+	public boolean activate()
 	{
 		while(true)
 		{
@@ -31,9 +31,10 @@ public class _MonitoringStationStub
 				org.omg.CORBA.portable.OutputStream _os = null;
 				try
 				{
-					_os = _request("_get_ior",true);
+					_os = _request( "activate", true);
 					_is = _invoke(_os);
-					return _is.read_string();
+					boolean _result = _is.read_boolean();
+					return _result;
 				}
 				catch( org.omg.CORBA.portable.RemarshalException _rx )
 					{
@@ -44,62 +45,143 @@ public class _MonitoringStationStub
 					String _id = _ax.getId();
 					try
 					{
-						_ax.getInputStream().close();
+							_ax.getInputStream().close();
 					}
 					catch (java.io.IOException e)
 					{
 						throw new RuntimeException("Unexpected exception " + e.toString() );
 					}
-						throw new RuntimeException("Unexpected exception " + _id );
-				}
-				finally
-				{
-					if (_os != null)
-					{
-						try
-						{
-							_os.close();
-						}
-						catch (java.io.IOException e)
-						{
-							throw new RuntimeException("Unexpected exception " + e.toString() );
-						}
-					}
-					this._releaseReply(_is);
-				}
+					throw new RuntimeException("Unexpected exception " + _id );
 			}
-
-			else
+			finally
 			{
-				org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "_get_ior", _opsClass);
-				if( _so == null )
-					continue;
-				MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
-				java.lang.String _result;
+				if (_os != null)
+				{
+					try
+					{
+						_os.close();
+					}
+					catch (java.io.IOException e)
+					{
+						throw new RuntimeException("Unexpected exception " + e.toString() );
+					}
+				}
+				this._releaseReply(_is);
+			}
+		}
+		else
+		{
+			org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "activate", _opsClass );
+			if( _so == null )
+				continue;
+			MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
+			boolean _result;
+			try
+			{
+				_result = _localServant.activate();
+				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+					((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
+				return _result;
+			}
+			catch (RuntimeException re) 
+			{
+				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+					((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(re);
+				throw re;
+			}
+			catch (java.lang.Error err) 
+			{
+				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+					((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(err);
+				throw err;
+			}
+			finally
+			{
+				_servant_postinvoke(_so);
+			}
+		}
+
+		}
+
+	}
+
+	public void deactivate()
+	{
+		while(true)
+		{
+			if(! this._is_local())
+			{
+				org.omg.CORBA.portable.InputStream _is = null;
+				org.omg.CORBA.portable.OutputStream _os = null;
 				try
 				{
-					_result = _localServant.ior();
-					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-						((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
-						return _result;
+					_os = _request( "deactivate", true);
+					_is = _invoke(_os);
+					return;
 				}
-				catch (RuntimeException re) 
+				catch( org.omg.CORBA.portable.RemarshalException _rx )
+					{
+						continue;
+					}
+				catch( org.omg.CORBA.portable.ApplicationException _ax )
 				{
-					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(re);
-					throw re;
-				}
-				catch (java.lang.Error err) 
-				{
-					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(err);
-					throw err;
-				}
-				finally
-				{
-					_servant_postinvoke(_so);
-				}
+					String _id = _ax.getId();
+					try
+					{
+							_ax.getInputStream().close();
+					}
+					catch (java.io.IOException e)
+					{
+						throw new RuntimeException("Unexpected exception " + e.toString() );
+					}
+					throw new RuntimeException("Unexpected exception " + _id );
 			}
+			finally
+			{
+				if (_os != null)
+				{
+					try
+					{
+						_os.close();
+					}
+					catch (java.io.IOException e)
+					{
+						throw new RuntimeException("Unexpected exception " + e.toString() );
+					}
+				}
+				this._releaseReply(_is);
+			}
+		}
+		else
+		{
+			org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "deactivate", _opsClass );
+			if( _so == null )
+				continue;
+			MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
+			try
+			{
+				_localServant.deactivate();
+				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+					((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
+				return;
+			}
+			catch (RuntimeException re) 
+			{
+				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+					((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(re);
+				throw re;
+			}
+			catch (java.lang.Error err) 
+			{
+				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+					((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(err);
+				throw err;
+			}
+			finally
+			{
+				_servant_postinvoke(_so);
+			}
+		}
 
 		}
 
@@ -189,7 +271,7 @@ public class _MonitoringStationStub
 
 	}
 
-	public void deactivate()
+	public void send_alerts(MonitoringSystem.NoxReading reading)
 	{
 		while(true)
 		{
@@ -199,7 +281,8 @@ public class _MonitoringStationStub
 				org.omg.CORBA.portable.OutputStream _os = null;
 				try
 				{
-					_os = _request( "deactivate", true);
+					_os = _request( "send_alerts", true);
+					MonitoringSystem.NoxReadingHelper.write(_os,reading);
 					_is = _invoke(_os);
 					return;
 				}
@@ -238,13 +321,13 @@ public class _MonitoringStationStub
 		}
 		else
 		{
-			org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "deactivate", _opsClass );
+			org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "send_alerts", _opsClass );
 			if( _so == null )
 				continue;
 			MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
 			try
 			{
-				_localServant.deactivate();
+				_localServant.send_alerts(reading);
 				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
 					((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
 				return;
@@ -266,6 +349,90 @@ public class _MonitoringStationStub
 				_servant_postinvoke(_so);
 			}
 		}
+
+		}
+
+	}
+
+	public java.lang.String location()
+	{
+		while(true)
+		{
+			if(! this._is_local())
+			{
+				org.omg.CORBA.portable.InputStream _is = null;
+				org.omg.CORBA.portable.OutputStream _os = null;
+				try
+				{
+					_os = _request("_get_location",true);
+					_is = _invoke(_os);
+					return _is.read_string();
+				}
+				catch( org.omg.CORBA.portable.RemarshalException _rx )
+					{
+						continue;
+					}
+				catch( org.omg.CORBA.portable.ApplicationException _ax )
+				{
+					String _id = _ax.getId();
+					try
+					{
+						_ax.getInputStream().close();
+					}
+					catch (java.io.IOException e)
+					{
+						throw new RuntimeException("Unexpected exception " + e.toString() );
+					}
+						throw new RuntimeException("Unexpected exception " + _id );
+				}
+				finally
+				{
+					if (_os != null)
+					{
+						try
+						{
+							_os.close();
+						}
+						catch (java.io.IOException e)
+						{
+							throw new RuntimeException("Unexpected exception " + e.toString() );
+						}
+					}
+					this._releaseReply(_is);
+				}
+			}
+
+			else
+			{
+				org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "_get_location", _opsClass);
+				if( _so == null )
+					continue;
+				MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
+				java.lang.String _result;
+				try
+				{
+					_result = _localServant.location();
+					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+						((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
+						return _result;
+				}
+				catch (RuntimeException re) 
+				{
+					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(re);
+					throw re;
+				}
+				catch (java.lang.Error err) 
+				{
+					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(err);
+					throw err;
+				}
+				finally
+				{
+					_servant_postinvoke(_so);
+				}
+			}
 
 		}
 
@@ -437,180 +604,6 @@ public class _MonitoringStationStub
 
 	}
 
-	public java.lang.String location()
-	{
-		while(true)
-		{
-			if(! this._is_local())
-			{
-				org.omg.CORBA.portable.InputStream _is = null;
-				org.omg.CORBA.portable.OutputStream _os = null;
-				try
-				{
-					_os = _request("_get_location",true);
-					_is = _invoke(_os);
-					return _is.read_string();
-				}
-				catch( org.omg.CORBA.portable.RemarshalException _rx )
-					{
-						continue;
-					}
-				catch( org.omg.CORBA.portable.ApplicationException _ax )
-				{
-					String _id = _ax.getId();
-					try
-					{
-						_ax.getInputStream().close();
-					}
-					catch (java.io.IOException e)
-					{
-						throw new RuntimeException("Unexpected exception " + e.toString() );
-					}
-						throw new RuntimeException("Unexpected exception " + _id );
-				}
-				finally
-				{
-					if (_os != null)
-					{
-						try
-						{
-							_os.close();
-						}
-						catch (java.io.IOException e)
-						{
-							throw new RuntimeException("Unexpected exception " + e.toString() );
-						}
-					}
-					this._releaseReply(_is);
-				}
-			}
-
-			else
-			{
-				org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "_get_location", _opsClass);
-				if( _so == null )
-					continue;
-				MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
-				java.lang.String _result;
-				try
-				{
-					_result = _localServant.location();
-					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-						((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
-						return _result;
-				}
-				catch (RuntimeException re) 
-				{
-					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(re);
-					throw re;
-				}
-				catch (java.lang.Error err) 
-				{
-					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(err);
-					throw err;
-				}
-				finally
-				{
-					_servant_postinvoke(_so);
-				}
-			}
-
-		}
-
-	}
-
-	public boolean activate(java.lang.String station_name, java.lang.String location, java.lang.String ior)
-	{
-		while(true)
-		{
-			if(! this._is_local())
-			{
-				org.omg.CORBA.portable.InputStream _is = null;
-				org.omg.CORBA.portable.OutputStream _os = null;
-				try
-				{
-					_os = _request( "activate", true);
-					java.lang.String tmpResult2 = station_name;
-_os.write_string( tmpResult2 );
-					java.lang.String tmpResult3 = location;
-_os.write_string( tmpResult3 );
-					java.lang.String tmpResult4 = ior;
-_os.write_string( tmpResult4 );
-					_is = _invoke(_os);
-					boolean _result = _is.read_boolean();
-					return _result;
-				}
-				catch( org.omg.CORBA.portable.RemarshalException _rx )
-					{
-						continue;
-					}
-				catch( org.omg.CORBA.portable.ApplicationException _ax )
-				{
-					String _id = _ax.getId();
-					try
-					{
-							_ax.getInputStream().close();
-					}
-					catch (java.io.IOException e)
-					{
-						throw new RuntimeException("Unexpected exception " + e.toString() );
-					}
-					throw new RuntimeException("Unexpected exception " + _id );
-			}
-			finally
-			{
-				if (_os != null)
-				{
-					try
-					{
-						_os.close();
-					}
-					catch (java.io.IOException e)
-					{
-						throw new RuntimeException("Unexpected exception " + e.toString() );
-					}
-				}
-				this._releaseReply(_is);
-			}
-		}
-		else
-		{
-			org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "activate", _opsClass );
-			if( _so == null )
-				continue;
-			MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
-			boolean _result;
-			try
-			{
-				_result = _localServant.activate(station_name,location,ior);
-				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-					((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
-				return _result;
-			}
-			catch (RuntimeException re) 
-			{
-				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-					((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(re);
-				throw re;
-			}
-			catch (java.lang.Error err) 
-			{
-				if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
-					((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(err);
-				throw err;
-			}
-			finally
-			{
-				_servant_postinvoke(_so);
-			}
-		}
-
-		}
-
-	}
-
 	public boolean is_active()
 	{
 		while(true)
@@ -669,6 +662,90 @@ _os.write_string( tmpResult4 );
 				try
 				{
 					_result = _localServant.is_active();
+					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+						((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
+						return _result;
+				}
+				catch (RuntimeException re) 
+				{
+					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(re);
+					throw re;
+				}
+				catch (java.lang.Error err) 
+				{
+					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
+						((org.omg.CORBA.portable.ServantObjectExt)_so).exceptionalCompletion(err);
+					throw err;
+				}
+				finally
+				{
+					_servant_postinvoke(_so);
+				}
+			}
+
+		}
+
+	}
+
+	public java.lang.String ior()
+	{
+		while(true)
+		{
+			if(! this._is_local())
+			{
+				org.omg.CORBA.portable.InputStream _is = null;
+				org.omg.CORBA.portable.OutputStream _os = null;
+				try
+				{
+					_os = _request("_get_ior",true);
+					_is = _invoke(_os);
+					return _is.read_string();
+				}
+				catch( org.omg.CORBA.portable.RemarshalException _rx )
+					{
+						continue;
+					}
+				catch( org.omg.CORBA.portable.ApplicationException _ax )
+				{
+					String _id = _ax.getId();
+					try
+					{
+						_ax.getInputStream().close();
+					}
+					catch (java.io.IOException e)
+					{
+						throw new RuntimeException("Unexpected exception " + e.toString() );
+					}
+						throw new RuntimeException("Unexpected exception " + _id );
+				}
+				finally
+				{
+					if (_os != null)
+					{
+						try
+						{
+							_os.close();
+						}
+						catch (java.io.IOException e)
+						{
+							throw new RuntimeException("Unexpected exception " + e.toString() );
+						}
+					}
+					this._releaseReply(_is);
+				}
+			}
+
+			else
+			{
+				org.omg.CORBA.portable.ServantObject _so = _servant_preinvoke( "_get_ior", _opsClass);
+				if( _so == null )
+					continue;
+				MonitoringStationOperations _localServant = (MonitoringStationOperations)_so.servant;
+				java.lang.String _result;
+				try
+				{
+					_result = _localServant.ior();
 					if ( _so instanceof org.omg.CORBA.portable.ServantObjectExt) 
 						((org.omg.CORBA.portable.ServantObjectExt)_so).normalCompletion();
 						return _result;
