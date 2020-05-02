@@ -6,7 +6,7 @@ import org.omg.PortableServer.POA;
  * Generated from IDL interface "MonitoringCentre".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 18-Mar-2020 11:09:29
+ * @version generated at 30-Apr-2020 10:30:15
  */
 
 public class MonitoringCentrePOATie
@@ -52,14 +52,39 @@ public class MonitoringCentrePOATie
 		}
 		return super._default_POA();
 	}
+	public java.lang.String name()
+	{
+		return _delegate.name();
+	}
+
+	public void pull_local_servers_alarm_log()
+	{
+_delegate.pull_local_servers_alarm_log();
+	}
+
+	public void pull_local_servers_log()
+	{
+_delegate.pull_local_servers_log();
+	}
+
 	public void raise_alarm(MonitoringSystem.NoxReading alarm_reading)
 	{
 _delegate.raise_alarm(alarm_reading);
 	}
 
+	public void pull_local_server_readings()
+	{
+_delegate.pull_local_server_readings();
+	}
+
 	public void register_local_server(java.lang.String server_name)
 	{
 _delegate.register_local_server(server_name);
+	}
+
+	public void notify_agency(MonitoringSystem.NoxReading alarm_reading)
+	{
+_delegate.notify_agency(alarm_reading);
 	}
 
 	public void register_agency(java.lang.String who, java.lang.String contact_details, java.lang.String area_of_interest)

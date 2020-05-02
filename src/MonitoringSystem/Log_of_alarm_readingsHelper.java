@@ -4,7 +4,7 @@ package MonitoringSystem;
  * Generated from IDL alias "Log_of_alarm_readings".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 18-Mar-2020 11:09:29
+ * @version generated at 30-Apr-2020 10:30:15
  */
 
 public abstract class Log_of_alarm_readingsHelper
@@ -34,7 +34,7 @@ public abstract class Log_of_alarm_readingsHelper
 			{
 				if (_type == null)
 				{
-					_type = org.omg.CORBA.ORB.init().create_alias_tc(MonitoringSystem.Log_of_alarm_readingsHelper.id(), "Log_of_alarm_readings",org.omg.CORBA.ORB.init().create_sequence_tc(0, org.omg.CORBA.ORB.init().create_struct_tc(MonitoringSystem.NoxReadingHelper.id(),"NoxReading",new org.omg.CORBA.StructMember[]{new org.omg.CORBA.StructMember("datetime", org.omg.CORBA.ORB.init().create_string_tc(0), null),new org.omg.CORBA.StructMember("station_name", org.omg.CORBA.ORB.init().create_string_tc(0), null),new org.omg.CORBA.StructMember("reading_value", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null)})));
+					_type = org.omg.CORBA.ORB.init().create_alias_tc(MonitoringSystem.Log_of_alarm_readingsHelper.id(), "Log_of_alarm_readings",org.omg.CORBA.ORB.init().create_sequence_tc(0, org.omg.CORBA.ORB.init().create_struct_tc(MonitoringSystem.NoxReadingHelper.id(),"NoxReading",new org.omg.CORBA.StructMember[]{new org.omg.CORBA.StructMember("time", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null),new org.omg.CORBA.StructMember("date", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null),new org.omg.CORBA.StructMember("station_name", org.omg.CORBA.ORB.init().create_string_tc(0), null),new org.omg.CORBA.StructMember("reading_value", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null)})));
 				}
 			}
 		}
@@ -48,19 +48,19 @@ public abstract class Log_of_alarm_readingsHelper
 	public static MonitoringSystem.NoxReading[] read (final org.omg.CORBA.portable.InputStream _in)
 	{
 		MonitoringSystem.NoxReading[] _result;
-		int _l_result1 = _in.read_long();
+		int _l_result0 = _in.read_long();
 		try
 		{
 			 int x = _in.available();
-			 if ( x > 0 && _l_result1 > x )
+			 if ( x > 0 && _l_result0 > x )
 				{
-					throw new org.omg.CORBA.MARSHAL("Sequence length too large. Only " + x + " available and trying to assign " + _l_result1);
+					throw new org.omg.CORBA.MARSHAL("Sequence length too large. Only " + x + " available and trying to assign " + _l_result0);
 				}
 		}
 		catch (java.io.IOException e)
 		{
 		}
-		_result = new MonitoringSystem.NoxReading[_l_result1];
+		_result = new MonitoringSystem.NoxReading[_l_result0];
 		for (int i=0;i<_result.length;i++)
 		{
 			_result[i]=MonitoringSystem.NoxReadingHelper.read(_in);

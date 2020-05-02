@@ -5,7 +5,7 @@ package MonitoringSystem;
  * Generated from IDL interface "MonitoringStation".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 18-Mar-2020 11:09:29
+ * @version generated at 30-Apr-2020 10:30:15
  */
 
 public abstract class MonitoringStationPOA
@@ -15,15 +15,11 @@ public abstract class MonitoringStationPOA
 	static private final java.util.HashMap<String,Integer> m_opsHash = new java.util.HashMap<String,Integer>();
 	static
 	{
-		m_opsHash.put ( "activate", Integer.valueOf(0));
-		m_opsHash.put ( "deactivate", Integer.valueOf(1));
-		m_opsHash.put ( "_get_station_name", Integer.valueOf(2));
-		m_opsHash.put ( "send_alerts", Integer.valueOf(3));
-		m_opsHash.put ( "_get_location", Integer.valueOf(4));
-		m_opsHash.put ( "get_reading", Integer.valueOf(5));
-		m_opsHash.put ( "reset", Integer.valueOf(6));
-		m_opsHash.put ( "_get_is_active", Integer.valueOf(7));
-		m_opsHash.put ( "_get_ior", Integer.valueOf(8));
+		m_opsHash.put ( "_get_station_name", Integer.valueOf(0));
+		m_opsHash.put ( "activate", Integer.valueOf(1));
+		m_opsHash.put ( "get_reading", Integer.valueOf(2));
+		m_opsHash.put ( "_get_location", Integer.valueOf(3));
+		m_opsHash.put ( "_get_is_active", Integer.valueOf(4));
 	}
 	private String[] ids = {"IDL:MonitoringSystem/MonitoringStation:1.0"};
 	public MonitoringSystem.MonitoringStation _this()
@@ -49,62 +45,37 @@ public abstract class MonitoringStationPOA
 			throw new org.omg.CORBA.BAD_OPERATION(method + " not found");
 		switch ( opsIndex.intValue() )
 		{
-			case 0: // activate
-			{
-				_out = handler.createReply();
-				_out.write_boolean(activate());
-				break;
-			}
-			case 1: // deactivate
-			{
-				_out = handler.createReply();
-				deactivate();
-				break;
-			}
-			case 2: // _get_station_name
+			case 0: // _get_station_name
 			{
 			_out = handler.createReply();
 			java.lang.String tmpResult2 = station_name();
 _out.write_string( tmpResult2 );
 				break;
 			}
-			case 3: // send_alerts
+			case 1: // activate
 			{
-				MonitoringSystem.NoxReading _arg0=MonitoringSystem.NoxReadingHelper.read(_input);
+				java.lang.String _arg0=_input.read_string();
 				_out = handler.createReply();
-				send_alerts(_arg0);
+				activate(_arg0);
 				break;
 			}
-			case 4: // _get_location
+			case 2: // get_reading
+			{
+				_out = handler.createReply();
+				MonitoringSystem.NoxReadingHelper.write(_out,get_reading());
+				break;
+			}
+			case 3: // _get_location
 			{
 			_out = handler.createReply();
 			java.lang.String tmpResult3 = location();
 _out.write_string( tmpResult3 );
 				break;
 			}
-			case 5: // get_reading
-			{
-				_out = handler.createReply();
-				MonitoringSystem.NoxReadingHelper.write(_out,get_reading());
-				break;
-			}
-			case 6: // reset
-			{
-				_out = handler.createReply();
-				reset();
-				break;
-			}
-			case 7: // _get_is_active
+			case 4: // _get_is_active
 			{
 			_out = handler.createReply();
 			_out.write_boolean(is_active());
-				break;
-			}
-			case 8: // _get_ior
-			{
-			_out = handler.createReply();
-			java.lang.String tmpResult4 = ior();
-_out.write_string( tmpResult4 );
 				break;
 			}
 		}

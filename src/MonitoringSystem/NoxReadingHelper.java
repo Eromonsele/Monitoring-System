@@ -5,7 +5,7 @@ package MonitoringSystem;
  * Generated from IDL struct "NoxReading".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 18-Mar-2020 11:09:29
+ * @version generated at 30-Apr-2020 10:30:15
  */
 
 public abstract class NoxReadingHelper
@@ -19,7 +19,7 @@ public abstract class NoxReadingHelper
 			{
 				if (_type == null)
 				{
-					_type = org.omg.CORBA.ORB.init().create_struct_tc(MonitoringSystem.NoxReadingHelper.id(),"NoxReading",new org.omg.CORBA.StructMember[]{new org.omg.CORBA.StructMember("datetime", org.omg.CORBA.ORB.init().create_string_tc(0), null),new org.omg.CORBA.StructMember("station_name", org.omg.CORBA.ORB.init().create_string_tc(0), null),new org.omg.CORBA.StructMember("reading_value", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null)});
+					_type = org.omg.CORBA.ORB.init().create_struct_tc(MonitoringSystem.NoxReadingHelper.id(),"NoxReading",new org.omg.CORBA.StructMember[]{new org.omg.CORBA.StructMember("time", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null),new org.omg.CORBA.StructMember("date", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null),new org.omg.CORBA.StructMember("station_name", org.omg.CORBA.ORB.init().create_string_tc(0), null),new org.omg.CORBA.StructMember("reading_value", org.omg.CORBA.ORB.init().get_primitive_tc(org.omg.CORBA.TCKind.from_int(3)), null)});
 				}
 			}
 		}
@@ -59,17 +59,18 @@ public abstract class NoxReadingHelper
 	public static MonitoringSystem.NoxReading read (final org.omg.CORBA.portable.InputStream in)
 	{
 		MonitoringSystem.NoxReading result = new MonitoringSystem.NoxReading();
-		result.datetime=in.read_string();
+		result.time=in.read_long();
+		result.date=in.read_long();
 		result.station_name=in.read_string();
 		result.reading_value=in.read_long();
 		return result;
 	}
 	public static void write (final org.omg.CORBA.portable.OutputStream out, final MonitoringSystem.NoxReading s)
 	{
-		java.lang.String tmpResult0 = s.datetime;
+		out.write_long(s.time);
+		out.write_long(s.date);
+		java.lang.String tmpResult0 = s.station_name;
 out.write_string( tmpResult0 );
-		java.lang.String tmpResult1 = s.station_name;
-out.write_string( tmpResult1 );
 		out.write_long(s.reading_value);
 	}
 }

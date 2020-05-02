@@ -1,128 +1,100 @@
+//Import statements
 import MonitoringSystem.*;
-import MonitoringSystem.MonitoringStation;
 import org.omg.CORBA.ORB;
-import org.omg.CORBA.ORBPackage.InvalidName;
-import org.omg.CosNaming.NameComponent;
-import org.omg.CosNaming.NamingContextExt;
-import org.omg.CosNaming.NamingContextExtHelper;
-import org.omg.CosNaming.NamingContextPackage.*;
-import org.omg.PortableServer.POA;
-import org.omg.PortableServer.POAHelper;
+import org.omg.CosNaming.*;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * The monitoring Station.
+ * @Author Eromosele Okhilua U1671506
+ */
 public class MonitoringStationImpl extends MonitoringStationPOA{
+	private String station_name; // the station name
+	private String location;// the location of the station
+	private ORB orb;
+	private boolean is_active;
+	private MonitoringStationServer parent; // parent GUI
+	private MonitoringSystem.RegionalCentre regionalCentre; // regional centre
 
-    private String station_name;
-    private String location;
-    private ORB orb;
-    private boolean is_active = false;
-    private String ior;
-    private RegionalCentre regionalCentre;
+	// Constructor
+	public MonitoringStationImpl(String station_name, String location, ORB orb, MonitoringStationServer parent) {
+		this.station_name = station_name;
+		this.location = location;
+		this.orb = orb;
+		this.parent = parent;
+	}
 
-    MonitoringStationImpl(){
+	/**
+	 * Returns the name of the station
+	 * @return a string containing the name of the monitoring station
+	 */
+	public String station_name() {
+		return station_name;
+	}
 
-    }
+	/**
+	 * Returns the location of the monitor
+	 * @return a string containing the location of the monitoring station
+	 */
+	public String location() {
+		return location;
+	}
 
-    public String station_name() {
-        return station_name;
-    }
+	/**
+	 * Returns the active state of the
+	 * @return a boolean indicating if a monitoring station is active
+	 */
+	public boolean is_active() {
+		return is_active;
+	}
+	/**
+	 * The method gets the latest nox readings
+	 * @return reading a
+	 */
+	public NoxReading get_reading() {
 
+		int reading_value = new Random().nextInt(100);
+//		int reading_value = 82;
+		NoxReading reading = new NoxReading((int)System.currentTimeMillis(),(int)System.currentTimeMillis(),station_name(),reading_value);
+		if (reading_value > 80){
+			//raise alarm
+			regionalCentre.raise_alarm(reading);
+		}
+		return reading;
+	}
 
-    public String location() {
-        return location;
-    }
+	/**
+	 * This connects the monitoring  station to a local server
+	 * @param local_server a string containing the name of the local server
+	 */
+	public void activate(String local_server) {
+		parent.addMessage("Trying to connect to a regional center");
+		if (local_server == null){
+			parent.addMessage("Local server name was left blank");
+			return;
+		}
+		try {
+			// Get a reference to the Naming service
+			org.omg.CORBA.Object nameServiceObj = orb.resolve_initial_references ("NameService");
 
+			// Use NamingContextExt instead of NamingContext. This is
+			// part of the Interoperable naming Service.
+			NamingContextExt nameService = NamingContextExtHelper.narrow(nameServiceObj);
 
-    public boolean is_active() {
-        return is_active;
-    }
+			regionalCentre = RegionalCentreHelper.narrow(nameService.resolve_str(local_server+".Regional Center"));
+			regionalCentre.add_monitoring_station(station_name(),location());
 
-    public String ior() {
-        return ior;
-    }
+			parent.activateButton.setName("Connected to Regional Center:"+ regionalCentre.name());
+			parent.activateButton.setEnabled(false);
+		} catch (Exception e) {
+			System.out.println("ERROR : " + e) ;
+			e.printStackTrace(System.out);
+			parent.addMessage("Connection to regional center was unsuccessful");
+			return;
+		}
+		parent.addMessage("Connection to regional center has been established");
+		is_active = true;
+	}
 
-     /**
-     *  Send Alerts
-     * @param reading
-     */
-    public void send_alerts(NoxReading reading) {
-        if (reading.reading_value > 50 || reading.reading_value < 0){
-            regionalCentre.raise_alarm(reading);
-        }
-    }
-
-    public void setStation_name(String station_name) {
-        this.station_name = station_name;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public void setOrb(ORB orb) {
-        this.orb = orb;
-    }
-
-    public void setIs_active(boolean is_active) {
-        this.is_active = is_active;
-    }
-
-    public void setIor(String ior) {
-        this.ior = ior;
-    }
-
-    public NoxReading get_reading() {
-        Random rand = new Random();
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-        NoxReading data = new NoxReading(dtf.format(now),station_name,rand.nextInt(50));
-        send_alerts(data);
-        return data;
-    }
-
-    public boolean activate() {
-
-        try {
-            // Get a reference to the Naming service
-            org.omg.CORBA.Object nameServiceObj = orb.resolve_initial_references ("NameService");
-
-            if (nameServiceObj == null) {
-                System.out.println("nameServiceObj = null");
-            }
-
-            // Use NamingContextExt instead of NamingContext. This is
-            // part of the Interoperable naming Service.
-            NamingContextExt nameService = NamingContextExtHelper.narrow(nameServiceObj);
-            if (nameService == null) {
-                System.out.println("nameService = null");
-                return false;
-            }
-
-            // resolve the Count object reference in the Naming service
-            String name = "localServer";
-            regionalCentre = RegionalCentreHelper.narrow(nameService.resolve_str(name));
-
-            regionalCentre.add_monitoring_station(station_name(),location(),ior());
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
-        is_active = true;
-
-        return true;
-    }
-
-    public void deactivate() {
-
-    }
-
-    public void reset() {
-
-    }
 }

@@ -4,7 +4,7 @@ package MonitoringSystem;
  * Generated from IDL interface "RegionalCentre".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 18-Mar-2020 11:09:29
+ * @version generated at 30-Apr-2020 10:30:15
  */
 
 public final class RegionalCentreHolder	implements org.omg.CORBA.portable.Streamable{

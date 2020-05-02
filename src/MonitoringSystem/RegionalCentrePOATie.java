@@ -6,7 +6,7 @@ import org.omg.PortableServer.POA;
  * Generated from IDL interface "RegionalCentre".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 18-Mar-2020 11:09:29
+ * @version generated at 30-Apr-2020 10:30:15
  */
 
 public class RegionalCentrePOATie
@@ -62,14 +62,19 @@ public class RegionalCentrePOATie
 _delegate.raise_alarm(alarmReading);
 	}
 
-	public java.lang.String location_name()
+	public MonitoringSystem.NoxReading[] log()
 	{
-		return _delegate.location_name();
+		return _delegate.log();
 	}
 
-	public void add_monitoring_station(java.lang.String station_name, java.lang.String station_location, java.lang.String station_ior)
+	public boolean connect_to_monitoring_center(java.lang.String center_name)
 	{
-_delegate.add_monitoring_station(station_name,station_location,station_ior);
+		return _delegate.connect_to_monitoring_center(center_name);
+	}
+
+	public java.lang.String[] log_of_events()
+	{
+		return _delegate.log_of_events();
 	}
 
 	public MonitoringSystem.NoxReading[] take_readings()
@@ -77,9 +82,19 @@ _delegate.add_monitoring_station(station_name,station_location,station_ior);
 		return _delegate.take_readings();
 	}
 
-	public MonitoringSystem.NoxReading[] log()
+	public void add_monitoring_station(java.lang.String station_name, java.lang.String station_location)
 	{
-		return _delegate.log();
+_delegate.add_monitoring_station(station_name,station_location);
+	}
+
+	public void add_to_log(java.lang.String event)
+	{
+_delegate.add_to_log(event);
+	}
+
+	public java.lang.String location_name()
+	{
+		return _delegate.location_name();
 	}
 
 }

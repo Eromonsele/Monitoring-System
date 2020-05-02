@@ -5,7 +5,7 @@ package MonitoringSystem;
  * Generated from IDL interface "RegionalCentre".
  *
  * @author JacORB IDL compiler V 3.9
- * @version generated at 18-Mar-2020 11:09:29
+ * @version generated at 30-Apr-2020 10:30:15
  */
 
 public abstract class RegionalCentrePOA
@@ -17,10 +17,13 @@ public abstract class RegionalCentrePOA
 	{
 		m_opsHash.put ( "_get_name", Integer.valueOf(0));
 		m_opsHash.put ( "raise_alarm", Integer.valueOf(1));
-		m_opsHash.put ( "_get_location_name", Integer.valueOf(2));
-		m_opsHash.put ( "add_monitoring_station", Integer.valueOf(3));
-		m_opsHash.put ( "take_readings", Integer.valueOf(4));
-		m_opsHash.put ( "_get_log", Integer.valueOf(5));
+		m_opsHash.put ( "_get_log", Integer.valueOf(2));
+		m_opsHash.put ( "connect_to_monitoring_center", Integer.valueOf(3));
+		m_opsHash.put ( "_get_log_of_events", Integer.valueOf(4));
+		m_opsHash.put ( "take_readings", Integer.valueOf(5));
+		m_opsHash.put ( "add_monitoring_station", Integer.valueOf(6));
+		m_opsHash.put ( "add_to_log", Integer.valueOf(7));
+		m_opsHash.put ( "_get_location_name", Integer.valueOf(8));
 	}
 	private String[] ids = {"IDL:MonitoringSystem/RegionalCentre:1.0"};
 	public MonitoringSystem.RegionalCentre _this()
@@ -49,8 +52,8 @@ public abstract class RegionalCentrePOA
 			case 0: // _get_name
 			{
 			_out = handler.createReply();
-			java.lang.String tmpResult12 = name();
-_out.write_string( tmpResult12 );
+			java.lang.String tmpResult9 = name();
+_out.write_string( tmpResult9 );
 				break;
 			}
 			case 1: // raise_alarm
@@ -60,32 +63,51 @@ _out.write_string( tmpResult12 );
 				raise_alarm(_arg0);
 				break;
 			}
-			case 2: // _get_location_name
+			case 2: // _get_log
 			{
 			_out = handler.createReply();
-			java.lang.String tmpResult13 = location_name();
-_out.write_string( tmpResult13 );
+			MonitoringSystem.Log_of_alarm_readingsHelper.write(_out,log());
 				break;
 			}
-			case 3: // add_monitoring_station
+			case 3: // connect_to_monitoring_center
 			{
 				java.lang.String _arg0=_input.read_string();
-				java.lang.String _arg1=_input.read_string();
-				java.lang.String _arg2=_input.read_string();
 				_out = handler.createReply();
-				add_monitoring_station(_arg0,_arg1,_arg2);
+				_out.write_boolean(connect_to_monitoring_center(_arg0));
 				break;
 			}
-			case 4: // take_readings
+			case 4: // _get_log_of_events
+			{
+			_out = handler.createReply();
+			MonitoringSystem.Log_of_eventsHelper.write(_out,log_of_events());
+				break;
+			}
+			case 5: // take_readings
 			{
 				_out = handler.createReply();
 				MonitoringSystem.Set_of_readingsHelper.write(_out,take_readings());
 				break;
 			}
-			case 5: // _get_log
+			case 6: // add_monitoring_station
+			{
+				java.lang.String _arg0=_input.read_string();
+				java.lang.String _arg1=_input.read_string();
+				_out = handler.createReply();
+				add_monitoring_station(_arg0,_arg1);
+				break;
+			}
+			case 7: // add_to_log
+			{
+				java.lang.String _arg0=_input.read_string();
+				_out = handler.createReply();
+				add_to_log(_arg0);
+				break;
+			}
+			case 8: // _get_location_name
 			{
 			_out = handler.createReply();
-			MonitoringSystem.Log_of_alarm_readingsHelper.write(_out,log());
+			java.lang.String tmpResult10 = location_name();
+_out.write_string( tmpResult10 );
 				break;
 			}
 		}

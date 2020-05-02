@@ -2,26 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="296b6ba4-c6cc-4aa7-888f-cbee20656e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonitoringStationDialog.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonitoringStationDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonitoringCenterServer.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonitoringCenterServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localServer.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringCenter.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoringStation.ref" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/LocalServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/LocalServer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/LocalServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/LocalServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/LocalServerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/LocalServerImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringCentreImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringCentreImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStation$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStation$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStation$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStation$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStation$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringStationServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/Log_of_alarm_readingsHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/Log_of_alarm_readingsHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringCentreOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringCentreOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringCentrePOA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringCentrePOA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringCentrePOATie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringCentrePOATie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringStationOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringStationOperations.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringStationPOA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringStationPOA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringStationPOATie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/MonitoringStationPOATie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/NoxReading.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/NoxReading.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/NoxReadingHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/NoxReadingHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/RegionalCentreOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/RegionalCentreOperations.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/RegionalCentrePOA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/RegionalCentrePOA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/RegionalCentrePOATie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/RegionalCentrePOATie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/Set_of_readingsHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/Set_of_readingsHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/_MonitoringCentreStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/_MonitoringCentreStub.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/_MonitoringStationStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MonitoringSystem/MonitoringSystem/_MonitoringStationStub.class" afterDir="false" />
@@ -31,9 +41,11 @@
       <change beforePath="$PROJECT_DIR$/src/LocalServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LocalServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LocalServerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LocalServerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonitoringCentreImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringCentreImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonitoringStation.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringStationServer.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonitoringStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringStationServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonitoringStationDialog.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonitoringStationDialog.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonitoringStationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringStationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonitoringStationServer.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringStationServer.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonitoringStationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringStationServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonitoringSystem/Log_of_alarm_readingsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringSystem/Log_of_alarm_readingsHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonitoringSystem/Log_of_alarm_readingsHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringSystem/Log_of_alarm_readingsHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonitoringSystem/MonitoringCentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonitoringSystem/MonitoringCentre.java" afterDir="false" />
@@ -69,6 +81,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -80,20 +106,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YlHTW839G9jGLD89kcMvKWYlJ3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="415" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Users/seleo/Downloads/Jacorb_NamingServiceDemo-master" />
+    <property name="last_opened_file_path" value="D:/Users/seleo/Desktop" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,6 +153,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MonitoringCenterServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MonitoringCenterServer" />
+      <module name="MonitoringSystem" />
+      <option name="PROGRAM_PARAMETERS" value="-ORBInitRef.NameService=file:D:\Users\seleo\Documents\jacorb-3.9\jacorb-3.9\bin\name.ior" />
+      <option name="VM_PARAMETERS" value="-Djacorb.log.default.verbosity=2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonitoringStationServer" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MonitoringStationServer" />
       <module name="MonitoringSystem" />
@@ -132,11 +174,13 @@
     <list>
       <item itemvalue="Application.LocalServer" />
       <item itemvalue="Application.MonitoringStationServer" />
+      <item itemvalue="Application.MonitoringCenterServer" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MonitoringStationServer" />
         <item itemvalue="Application.LocalServer" />
+        <item itemvalue="Application.MonitoringCenterServer" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +214,14 @@
       <workItem from="1584110631152" duration="529000" />
       <workItem from="1584137700962" duration="18798000" />
       <workItem from="1584270294073" duration="38765000" />
-      <workItem from="1584449223919" duration="27183000" />
+      <workItem from="1584449223919" duration="29056000" />
+      <workItem from="1584673464802" duration="30227000" />
+      <workItem from="1585244417372" duration="16433000" />
+      <workItem from="1585393315221" duration="34322000" />
+      <workItem from="1585682648682" duration="11574000" />
+      <workItem from="1585938538595" duration="28128000" />
+      <workItem from="1586239605785" duration="37071000" />
+      <workItem from="1587995477014" duration="97156000" />
     </task>
     <servers />
   </component>
@@ -178,10 +229,12 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2334" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584382146152">
-      <screen x="1920" y="7" width="1920" height="1040" />
+    <state x="2073" y="334" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588056211661">
+      <screen x="1920" y="7" width="1920" height="1050" />
     </state>
-    <state x="2334" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584382146152" />
+    <state x="153" y="324" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586328890942" />
+    <state x="2334" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584876339628" />
+    <state x="2073" y="334" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588056211661" />
     <state x="241" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584185962891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -190,12 +243,13 @@
       <screen x="0" y="0" width="1914" height="988" />
     </state>
     <state x="661" y="327" width="584" height="324" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1914.988@0.0.1914.988" timestamp="1583530806112" />
-    <state x="1522" y="379" width="389" height="557" key="#com.intellij.ide.util.MemberChooser" timestamp="1584531543370">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="3380" y="390" width="460" height="563" key="#com.intellij.ide.util.MemberChooser" timestamp="1588174176695">
+      <screen x="1920" y="7" width="1920" height="1050" />
     </state>
     <state x="1517" y="360" width="389" height="557" key="#com.intellij.ide.util.MemberChooser/0.0.1914.988@0.0.1914.988" timestamp="1583521275267" />
-    <state x="1522" y="379" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1584531543370" />
-    <state x="3442" y="386" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584467262563" />
+    <state x="1522" y="379" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586342626569" />
+    <state x="2301" y="302" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1586191279144" />
+    <state x="3380" y="390" width="460" height="563" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588174176695" />
     <state x="808" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583567561648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -213,45 +267,109 @@
       <screen x="1920" y="7" width="1920" height="1040" />
     </state>
     <state x="2728" y="357" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584110967808" />
-    <state x="2534" y="329" width="916" height="511" key="FileChooserDialogImpl" timestamp="1584111158087">
-      <screen x="1920" y="7" width="1920" height="1040" />
+    <state x="2534" y="332" width="916" height="511" key="FileChooserDialogImpl" timestamp="1588272527425">
+      <screen x="1920" y="7" width="1920" height="1050" />
     </state>
     <state x="612" y="306" width="916" height="511" key="FileChooserDialogImpl/0.0.1914.988@0.0.1914.988" timestamp="1583510309561" />
     <state x="2534" y="329" key="FileChooserDialogImpl/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584111158087" />
-    <state width="914" height="205" key="GridCell.Tab.0.bottom" timestamp="1584547007325">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="614" y="325" key="FileChooserDialogImpl/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588262012578" />
+    <state x="2534" y="332" key="FileChooserDialogImpl/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588272527425" />
+    <state width="960" height="359" key="GridCell.Tab.0.bottom" timestamp="1588371449718">
+      <screen x="1920" y="7" width="1920" height="1050" />
     </state>
-    <state width="914" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1584547007325" />
-    <state width="1877" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584469856863" />
-    <state width="914" height="205" key="GridCell.Tab.0.center" timestamp="1584547007325">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586355303682" />
+    <state width="1921" height="206" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1586191352576" />
+    <state width="1877" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588362290101" />
+    <state width="960" height="359" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449718" />
+    <state width="960" height="359" key="GridCell.Tab.0.center" timestamp="1588371449718">
+      <screen x="1920" y="7" width="1920" height="1050" />
     </state>
-    <state width="914" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1584547007325" />
-    <state width="1877" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584469856863" />
-    <state width="914" height="205" key="GridCell.Tab.0.left" timestamp="1584547007325">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="218" key="GridCell.Tab.0.center/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586355303682" />
+    <state width="1921" height="206" key="GridCell.Tab.0.center/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1586191352576" />
+    <state width="1877" height="220" key="GridCell.Tab.0.center/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588362290101" />
+    <state width="960" height="359" key="GridCell.Tab.0.center/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449718" />
+    <state width="960" height="359" key="GridCell.Tab.0.left" timestamp="1588371449717">
+      <screen x="1920" y="7" width="1920" height="1050" />
     </state>
-    <state width="914" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1584547007325" />
-    <state width="1877" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584469856862" />
-    <state width="914" height="205" key="GridCell.Tab.0.right" timestamp="1584547007325">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1077" height="218" key="GridCell.Tab.0.left/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586355303682" />
+    <state width="1921" height="206" key="GridCell.Tab.0.left/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1586191352576" />
+    <state width="1877" height="220" key="GridCell.Tab.0.left/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588362290101" />
+    <state width="960" height="359" key="GridCell.Tab.0.left/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449717" />
+    <state width="960" height="359" key="GridCell.Tab.0.right" timestamp="1588371449718">
+      <screen x="1920" y="7" width="1920" height="1050" />
     </state>
-    <state width="914" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1584547007325" />
-    <state width="1877" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584469856863" />
+    <state width="1077" height="218" key="GridCell.Tab.0.right/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586355303682" />
+    <state width="1921" height="206" key="GridCell.Tab.0.right/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1586191352576" />
+    <state width="1877" height="220" key="GridCell.Tab.0.right/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588362290101" />
+    <state width="960" height="359" key="GridCell.Tab.0.right/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449718" />
+    <state width="960" height="359" key="GridCell.Tab.1.bottom" timestamp="1588371449719">
+      <screen x="1920" y="7" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1585678175007" />
+    <state width="960" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588156989104" />
+    <state width="960" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449719" />
+    <state width="960" height="359" key="GridCell.Tab.1.center" timestamp="1588371449718">
+      <screen x="1920" y="7" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.center/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1585678175007" />
+    <state width="960" height="359" key="GridCell.Tab.1.center/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588156989104" />
+    <state width="960" height="359" key="GridCell.Tab.1.center/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449718" />
+    <state width="960" height="359" key="GridCell.Tab.1.left" timestamp="1588371449718">
+      <screen x="1920" y="7" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.left/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1585678175007" />
+    <state width="960" height="359" key="GridCell.Tab.1.left/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588156989104" />
+    <state width="960" height="359" key="GridCell.Tab.1.left/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449718" />
+    <state width="960" height="359" key="GridCell.Tab.1.right" timestamp="1588371449718">
+      <screen x="1920" y="7" width="1920" height="1050" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.right/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1585678175007" />
+    <state width="960" height="359" key="GridCell.Tab.1.right/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588156989104" />
+    <state width="960" height="359" key="GridCell.Tab.1.right/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588371449718" />
+    <state x="2460" y="266" key="IDE.errors.dialog" timestamp="1588281574306">
+      <screen x="1920" y="7" width="1920" height="1050" />
+    </state>
+    <state x="2460" y="266" key="IDE.errors.dialog/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588281574306" />
+    <state x="696" y="247" key="RollbackChangesDialog" timestamp="1588334212952">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="696" y="247" key="RollbackChangesDialog/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588334212952" />
     <state x="2483" y="161" width="1026" height="838" key="SettingsEditor" timestamp="1584372090002">
       <screen x="1920" y="7" width="1920" height="1040" />
     </state>
     <state x="561" y="146" width="1026" height="838" key="SettingsEditor/0.0.1914.988@0.0.1914.988" timestamp="1583530771766" />
     <state x="2483" y="161" key="SettingsEditor/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584372090002" />
-    <state x="3048" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1584110631769">
-      <screen x="1920" y="7" width="1920" height="1040" />
-    </state>
-    <state x="1124" y="358" key="com.intellij.ide.util.TipDialog/0.0.1914.988@0.0.1914.988" timestamp="1583526433114" />
-    <state x="3048" y="384" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584110631769" />
-    <state x="-8" y="-8" width="612" height="787" maximized="true" key="dock-window-1" timestamp="1584549248744">
+    <state x="1128" y="377" key="com.intellij.ide.util.TipDialog" timestamp="1585682649711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-8" y="-8" width="612" height="787" maximized="true" key="dock-window-1/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1584549248744" />
-    <state x="2024" y="106" width="680" height="719" key="dock-window-1/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584262704857" />
+    <state x="1124" y="358" key="com.intellij.ide.util.TipDialog/0.0.1914.988@0.0.1914.988" timestamp="1583526433114" />
+    <state x="1128" y="377" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1585682649711" />
+    <state x="3048" y="384" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1584110631769" />
+    <state x="2584" y="425" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588137488085">
+      <screen x="1920" y="7" width="1920" height="1050" />
+    </state>
+    <state x="2584" y="425" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588137488085" />
+    <state x="345" y="0" width="1591" height="762" maximized="true" key="dock-window-1" timestamp="1588278244210">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586272559331" />
+    <state x="2873" y="7" width="974" height="1047" key="dock-window-1/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1586239634362" />
+    <state x="345" y="0" width="1591" height="762" maximized="true" key="dock-window-1/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588278244210" />
+    <state x="2873" y="7" width="974" height="1047" maximized="true" key="dock-window-2" timestamp="1585508207970">
+      <screen x="1920" y="7" width="1920" height="1040" />
+    </state>
+    <state x="2873" y="7" width="974" height="1047" maximized="true" key="dock-window-2/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1585508207970" />
+    <state x="151" y="-17" width="1386" height="818" maximized="true" key="dock-window-2/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1585487859881" />
+    <state x="591" y="73" width="737" height="894" key="find.popup" timestamp="1584783291557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="591" y="73" width="737" height="894" key="find.popup/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1584783291557" />
+    <state x="616" y="239" key="run.anything.popup" timestamp="1588239097475">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="237" key="run.anything.popup/0.0.1920.1040/1920.7.1920.1040@0.0.1920.1040" timestamp="1586341122750" />
+    <state x="2536" y="244" key="run.anything.popup/0.0.1920.1040/1920.7.1920.1040@1920.7.1920.1040" timestamp="1585289080313" />
+    <state x="616" y="239" key="run.anything.popup/0.0.1920.1050/1920.7.1920.1050@0.0.1920.1050" timestamp="1588239097475" />
+    <state x="2536" y="246" key="run.anything.popup/0.0.1920.1050/1920.7.1920.1050@1920.7.1920.1050" timestamp="1588172909800" />
   </component>
 </project>
